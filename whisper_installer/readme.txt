@@ -1,4 +1,4 @@
-Whisper V 0.2.5 Readme
+Whisper V 0.2.7 Readme
 ======================
 Whisper is an SLVoice.exe implementation based on the Mumble voice system.
 
@@ -6,6 +6,7 @@ Prerequisites
 -------------
 - Windows XP, Vista, or 7
 - SL 1.22.11 or SL 1.23.5 based viewer. 
+- OpenSim 0.6.9
 
 Installation
 ------------
@@ -47,20 +48,25 @@ Open Features
 - compilation for Mac
 - compilaton for Linux is implemented but only superficially tested
 - compatibility with SL viewer 2.x
+- compatibility with OpenSim 0.7.x
 - Automatic switch between Mumble and Freeswitch
 
-Known Issues
-------------
+Known Limitations
+-----------------
 Client:
 - In some occasions, the client is unmuted on startup with the Talk button showing muted.
   As soon as the Talk button is pressed, the state is corrected.
 - Microphone volume cannot be set in the device settings. Use Windows settings instead.
 - Device settings can be operated but has no effect. Use Windows settings instead.
+- In rare occasions, an avatar loses speaker indication, but can hear and talk normally.
+  This can be fixed with a new login
 
 Server:
 - The region server and murmur must not be separated by firewalls. In order to do that, we 
   need to run Glacier2. Glacier2 is not fully integrated yet.
-- All the parcels are running in the same murmur virtual server.  
+- All the parcels are running in the same murmur virtual server.
+- When entering a parcel or region without mumble voice, the user can still hear voice from
+  the parcel he/she came from.  
 
 Troubleshooting
 ---------------
