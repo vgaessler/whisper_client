@@ -1,6 +1,6 @@
 [Setup]
 AppName=Whisper
-AppVerName=Whisper 0.2.7
+AppVerName=Whisper 0.2.8
 DefaultDirName={reg:HKLM\SOFTWARE\Linden Research%2c Inc.\SecondLife,|{pf}\SecondLife}
 DirExistsWarning=no
 DefaultGroupName=Desktop
@@ -8,8 +8,8 @@ UninstallDisplayIcon={app}\mumble.exe
 Compression=lzma
 SolidCompression=yes
 OutputDir=.
-SourceDir=D:\home\projects\whisper\deployments\client_0.2.7
-OutputBaseFilename=whisper_setup_0.2.7
+SourceDir=D:\home\projects\aula-deployments\whisper\client_0.2.8
+OutputBaseFilename=whisper_setup_0.2.8
 AppendDefaultDirName=no
 
 [Dirs]

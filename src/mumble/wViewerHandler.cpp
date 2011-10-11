@@ -185,7 +185,7 @@ int ViewerHandler::sendMessage(Message& rMsg) {
 	if (is_active()) {
 
 		//Create buffer from message data
-		QByteArray& rsBuffer(rMsg.getSendData());
+		QByteArray rsBuffer(rMsg.getSendData());
 
 		//Add to message (not part of XML)
 		rsBuffer.append(0x0A).append(0x0A).append(0x0A);

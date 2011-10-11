@@ -1,2 +1,4 @@
-copy /Y release\mumble.exe c:\Programme\SecondLife_12211\SLVoice.exe
-copy /Y release\mumble.exe c:\Programme\SecondLife_12211\whisper\mumble.exe
+SET VIEWER_DIR=C:\Programme\Imprudence
+
+copy /Y release\mumble.exe %VIEWER_DIR%\SLVoice.exe
+copy /Y release\mumble.exe %VIEWER_DIR%\whisper\mumble.exe

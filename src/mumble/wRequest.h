@@ -220,8 +220,13 @@ namespace whisper {
         int response(XmlWriter* pW);
     };
 
+	class AccountGetSessionFonts1 : public Actor {
+	public:
+		AccountGetSessionFonts1(ViewerHandler &rVh, Connection& rC): Actor(rVh, rC) {}
+		int response(XmlWriter* pW);
+	};
 
-    // Session
+	// Session
     class SessionCreate1 : public Actor {
     public:
         SessionCreate1(ViewerHandler &rVh, Connection& rC): Actor(rVh, rC) {}

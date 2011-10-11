@@ -1,7 +1,7 @@
 
 SET DEVDIR=D:\dev
 SET MUMBLEDIR=D:\dev\mumble
-SET DEPLOYROOT=D:\home\projects\whisper\deployments
+SET DEPLOYROOT=D:\home\projects\aula-deployments\whisper
 
 SET DEPLOYDIR=%DEPLOYROOT%\%1
 SET DEPLOYFILES=%DEPLOYDIR%\files

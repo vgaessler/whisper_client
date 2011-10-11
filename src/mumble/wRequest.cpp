@@ -93,6 +93,9 @@ Actor* Request::createActor(const QString rs) {
     else if(!rs.compare("Account.ListAutoAcceptRules.1"))
         return new AccountListAutoAcceptRules1(rViewer, rConn);
 
+    else if(!rs.compare("Account.GetSessionFonts.1"))
+        return new AccountGetSessionFonts1(rViewer, rConn);
+
     else if(!rs.compare("Session.Create.1"))
         return new SessionCreate1(rViewer, rConn);
 
@@ -717,6 +720,18 @@ int AccountListAutoAcceptRules1::response(XmlWriter* pW) {
 
     // for now give a hardcoded handle
     pW->writeEmpty("AutoAcceptRules");
+    return 0;
+}
+
+
+// -----------------------------
+// Account.GetSessionFonts.1
+// -----------------------------
+
+int AccountGetSessionFonts1::response(XmlWriter* pW) {
+
+    // for now give a hardcoded handle
+    pW->writeEmpty("SessionFonts");
     return 0;
 }
 

@@ -1,12 +1,16 @@
-Whisper V 0.2.7 Readme
+Whisper V 0.2.8 Readme
 ======================
 Whisper is an SLVoice.exe implementation based on the Mumble voice system.
+
+New in 0.2.8
+------------
+- Compatibility with SL viewer 2/3
 
 Prerequisites
 -------------
 - Windows XP, Vista, or 7
-- SL 1.22.11 or SL 1.23.5 based viewer. 
-- OpenSim 0.6.9
+- Viewers based on SL 1.22.11 or or higher, tested with Imprudence  
+- OpenSim 0.6.9 or higher
 
 Installation
 ------------
@@ -43,12 +47,11 @@ Features
 
 Open Features
 -------------
+- devide setting optimization
 - positional sound
 - private chat
 - compilation for Mac
 - compilaton for Linux is implemented but only superficially tested
-- compatibility with SL viewer 2.x
-- compatibility with OpenSim 0.7.x
 - Automatic switch between Mumble and Freeswitch
 
 Known Limitations
@@ -59,14 +62,11 @@ Client:
 - Microphone volume cannot be set in the device settings. Use Windows settings instead.
 - Device settings can be operated but has no effect. Use Windows settings instead.
 - In rare occasions, an avatar loses speaker indication, but can hear and talk normally.
-  This can be fixed with a new login
+  This can be fixed with a new login or opening and closing the device settings.
 
 Server:
 - The region server and murmur must not be separated by firewalls. In order to do that, we 
-  need to run Glacier2. Glacier2 is not fully integrated yet.
-- All the parcels are running in the same murmur virtual server.
-- When entering a parcel or region without mumble voice, the user can still hear voice from
-  the parcel he/she came from.  
+  need to run Glacier2. Glacier2 is integrated but not yet fully tested.
 
 Troubleshooting
 ---------------
@@ -108,3 +108,5 @@ I am very grateful to the following people for their collaboration in whisper:
   (http://3dmetaverse.com)
 - Neil Canham for his support in testing the software.
   (http://www.flyingisland.co.uk)
+- Justin Clark-Casey for his serverside fix to run whisper with opensim 0.7.2
+- Vitaly Chashin for his analysis that led to the fix for compatibility wit SL viewer 2/3
